@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600;700&family=Poppins:wght@300;600;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --head-color--: #519259;
+}
+
+body::before{
+    content:"";
+    position: absolute;
+    background-image: url('images/Image\ 23.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: #121412 2px;
+
+}
+header img{
+    width: auto;
+    height: 5em;
+}
+nav{
+    padding: 10px;
+    align-self: center;
+    cursor: pointer;
+}
+nav ul{
+  display: flex;
+  list-style: none;  
+}
+nav ul li{
+    margin: 20px;
+    color: var(--head-color--);
+}
+
+nav .active{
+    border-bottom: 4px  solid #064635;
+}
+
+/* main content */
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 90vh;
+}
+.main h1{
+    text-align: left;
+    margin-left: 320px;
+    margin-right: 500px;
+    font: normal normal bold 50px/60px Poppins;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 100px;
+    line-height: 80px;
+}
+.main p{
+    position: relative;
+    margin-left: 320px;
+    margin-right: 500px;
+    margin-top: 20px;
+    color: #121412;
+    font: normal normal 600 30px/36px Poppins;
+    text-align: left;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+}
+
+.main button{
+    position: relative;
+    background: #278233 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    font: normal normal 300 33px/50px Poppins;
+    font-family: 'Poppins';
+    border-style: none;
+    color: white;
+    padding:0 30px 0 30px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 320px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.main .icon1{
+    position: absolute;
+    font-size:3.4rem;
+    opacity: 0.3;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.main .icon2{
+    position: absolute;
+    font-size:3.4rem;
+    opacity: 0.3;
+    margin-left: 90%;
+    cursor: pointer;
+}
+.main .active{
+    color: #064635;
+}
+.main i{
+    padding: 20px;
+}
+
+/* content 2 page */
+.left{
+    height: 700px;
+}
+
+.content .title{
+    font-family: 'Poppins', sans-serif;
+    color: #080808;
+    padding-left: 20px;
+    border-left: 10px solid #519259;
+    margin: 20px 0 0 90px;
+}
+.cont2{
+    display: flex;
+    justify-content: space-between;
+}
+.img1{
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.img2{
+    position: relative;
+    left: 80px;
+    bottom: 32em;
+}
+.img3{
+    position: relative;
+    left: 9em;
+    bottom: 1046px;
+}
+.img4{
+    position: relative;
+    left: 30em;
+    bottom: 80em;
+}
+.img5{
+    position: relative;
+    left: 9em;
+    bottom: 93em;
+}
+.left{
+    position: relative;
+    left: 10px;
+}
+.cont2 .right{
+    text-align: left;
+    font-size: 32px;
+    align-self: center;
+}
+.cont2 .right p{
+    font-family: 'Poppins', sans-serif;
+    width: 700px;
+}
+
+/* 3rd Page  */
+
+.content2{
+    position: relative;
+    height: 100vh;
+}
+
+.content2 .title{
+    display: flex;
+}
+
+.content2 h1{
+    position: absolute;
+    font: normal normal bold 50px/56px Poppins;
+    color: #080808;
+    padding-left: 20px;
+    border-left: 10px solid #519259;
+    margin: 0px 0 0 90px;
+}
+
+
+.form{
+    background-color: red;
+    width: 800px;
+    height: 600px;
+    justify-self: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 5%;
+    background: #A7C8AB 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 20px;
+
+}
+
+
+.elements{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
+.elements h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.elements:first-child{
+    padding-top: 5%;
+}
+
+.elements input{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-style: none;
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding-left: 20px;    
+}
+
+.element input textarea:focus, input:focus{
+        outline: none;
+}
+
+.elements input[type=text]{
+    height: 100px;
+    padding-bottom:40px;
+}
+
+.elements button{
+    background: #519259 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    padding: 15px;
+    border-style: none;
+    color: #FFFFFF;
+    width: 200px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.elements button i{
+    margin-right: 5%;
+}
+
+.elements .btn1{
+    position: relative;
+    color: black;
+    background-color: white;
+    margin-top: 5%;
+}
+
+.elements .btn2{
+    position: relative;
+    color: black;
+    background-color: white;
+    margin-left: 150px;
+}
+.img111{
+    position: absolute;
+    left: 1500px;
+    top: -137px;
+}
+.img112{
+    position: absolute;
+    right: 1500px;
+    top: 347px;
+}
+
+/* Footer Design */
+
+footer{
+    background-color: rgb(195, 206, 133);
+    position: relative;
+}
+
+footer .f-left{
+    position: absolute;
+    margin-left: 5%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+footer .f-left .logo{
+    width: 300px;
+    height: 100px;
+    background-image: url('images/Artboard\ –\ 1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer .f-left p{
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+}
+
+footer .f-right{
+    position: absolute;
+    margin-left: 30%;
+    width: 70%;
+    background: #F4EEA9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #5D3A001F;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+footer .splits{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .f-right li{
+    list-style: none;
+    padding: 5px;
+    font-family: 'Poppins';
+}
+
+footer .f-right p{
+    margin-top: 20px;
+    margin-left: 20%;
+    font-family: 'Poppins';
+}
+
+footer .f-right .firstCol{
+    border-top: 3px solid #064635;
+    padding-top: 5px;
+    font-family: 'Poppins';
+
+}
+
+footer .f-right .secondCol{
+    font-family: 'Poppins';
+}
+
+footer .f-right .thirdCol{
+    margin-top: 30px;
+    border-top: 3px solid #064635;
+    padding-top: 5px;
+    font-family: 'Poppins';
+}
